@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+    <html>
+    	<head>
+    		<meta charset="utf-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+    		<link rel="stylesheet" href="style.css" />
+    		<link rel="stylesheet" href="fonts/font-awesome.min.css" />
+    		<title>WebAgency</title>
+    	</head>
+
+    	<body>
+
+            <div id="bloc_page">
+
+    <!-- HEADER -->
+
+        		<header>
+
+            			<div id="logo"><a href="#menu_accueil"><img src="image/logo.png" alt="logo WebAgency"/></a></div>
+
+                            <nav id="top_menu">
+                    			<ul>
+                    				<li><a href="#menu_accueil">Accueil</a></li>
+                    				<li><a href="#menu_services">Services</a></li>
+                    				<li><a href="#menu_portfolio">Portfolio</a></li>
+                    				<li><a href="#menu_contact">Contact</a></li>
+                    			</ul>
+                    		</nav>
+
+            	</header>
+
+    <!-- SECTIONS -->
+
+    				<div class="page"><!-- Accueil -->
+
+                        <div class="ancre_menu" id="menu_accueil"></div>
+
+                        <div class="slideshow_container">
+                            <div class="slider" id="slider1">
+                                <img src="image/bg1.jpg" alt="background1" />
+                                    <div class="banniere_accueil">
+                                        <h1 class="accueil"><strong>WEBAGENCY</strong> : L'AGENCE DE TOUS <br>VOS PROJETS !</h1>
+                                        <p class="st_accueil">Vous avez un projet web ? La WebAgency vous aide à le réaliser !</p>
+                                        <div class="info"><a href="#contact">Plus d'infos</a></div>
+                                    </div>
+                            </div>
+
+                            <div class="slider" id="slider2">
+                                <img src="image/bg2.jpg" alt="background2" />
+                                    <div class="banniere_accueil">
+                                        <h1 class="accueil">UN PROJET ?<br>LA <strong>WEBAGENCY</strong> EST LA !</h1>
+                                        <p class="st_accueil">La WebAgency trouvera la solution à tous vos projets</p>
+                                        <div class="info"><a href="#contact">Plus d'infos</a></div>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                            <a class="prev" onclick="plusDivs(-1)"><i class="fa fa-angle-left"  aria-hidden="true"></i></a>
+                            <a class="next" onclick="plusDivs(+1)"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+
+                        <div class="bandeau">
+                            
+                        </div>
+
+    				</div>   	
+
+        			<div class="liseret"></div>
+
+        			<div class="page"><!-- Services -->
+
+                        <div class="ancre_menu" id="menu_services"></div>
+
+        				<section id="services">
+        			    		<h2>NOS SERVICES</h2>
+                                <div class="point_et_liseret">
+                                    <div class="liseret_point"></div>
+        			                <div class="point"></div>
+                                </div>
+        			    		<p id="st_services">Vous souhaitez créer votre site ? Lui donner un nouveau look ? Améliorer son référencement ?<br>Ensemble, nous trouverons votre solution !</p>
+        			            <div id="ex_services">
+        			                <div id="mac"><img src="image/mac.png" alt="image mac"/></div>
+        			                <div id="exemples">
+                                        <div class="exemple">
+                                            <div class="graph"><i class="fa fa-line-chart fa-2x" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="point"></div>
+                                            <div> 
+                                                <h3>UX DESIGN</h3>
+                			                        <p>Vous souhaitez que vos utilisateurs bénéficient d'une expérience fluide et accessible? Nos équipes sont parmi les plus performantes dans le domaine!</p>
+                                            </div>
+                                        </div>            
+
+                                        <div class="exemple">
+                                            <div class="graph"><i class="fa fa-area-chart fa-2x" aria-hidden="true"></i></div>
+                                            <div class="point"></div>
+                                            <div>
+                                                <h3>UI DESIGN</h3>
+                                                    <p>Nous vous aiderons à avoir une interface personelle, lisible et responsive pour vos projets!</p>
+                                            </div>
+                                        </div>        
+
+                                        <div class="exemple">
+                                            <div class="graph3"><i class="fa fa-pie-chart fa-2x" aria-hidden="true"></i></div>
+                                            <div class="point"></div>
+                                            <div> 
+                                                <h3>SEO</h3>
+                                                    <p>Nous pouvons vous aider à optimiser et faciliter votre référencement par les moteurs de recherche!</p>
+                                            </div>
+                                        </div>
+
+        			         		</div>
+        			         	</div>
+    			         </section>
+
+            		</div>
+
+            		<div class="liseret"></div>
+
+            		<div class="page"><!-- Portfolio -->
+
+                        <div class="ancre_menu" id="menu_portfolio"></div>
+
+            			<section id="portfolio">
+        			    		<h2>NOS PROJETS</h2>
+                                <div class="point_et_liseret">
+                                    <div class="liseret_point"></div>
+        			                <div class="point"></div>
+                                </div>
+                                    <p>Découvrez quelques unes de nos créations :</p>
+        			                <nav id="menuPF">
+        			                    <ul>
+        			                    <li><a id="allworks_tab" class="current_PF" href="#tous">All Works</a></li>
+        			                    <li><a href="#creative">Creative</a></li>
+        			                    <li><a href="#corporate">Corporate</a></li>
+        			                    <li><a id="portfolio_tab" href="#mini_portfolio">Portfolio</a></li>
+        			                    </ul>
+        			                </nav>
+        			            <div id="projets">
+                                    <div class="creative">
+                                        <img src="image/portfolio/01.jpg" alt="creative01" />
+                                        <div class="cadre_hover">
+                                            <i onclick="lightbox();currentBox(1)" class="fa fa-eye" aria-hidden="true"></i>
+                                            <h3>Krys</h3>
+                                            <p>Dernière campagne de l'opticien</p>
+                                        </div>
+                                    </div>
+                                    <div class="corporate">
+                                        <img src="image/portfolio/02.jpg" alt="corporate01" />
+                                        <div class="cadre_hover">
+                                            <i onclick="lightbox();currentBox(2)" class="fa fa-eye" aria-hidden="true"></i>
+                                            <h3>Donnie Darko</h3>
+                                            <p>Affiche spécial du film</p>
+                                        </div>
+                                    </div>
+                                    <div class="corporate">
+                                        <img src="image/portfolio/03.jpg" alt="corporate02" />
+                                        <div class="cadre_hover">
+                                            <i onclick="lightbox();currentBox(3)" class="fa fa-eye" aria-hidden="true"></i>
+                                            <h3>Pompadour</h3>
+                                            <p>Dernière campagne du couturier</p>
+                                        </div>
+                                    </div>
+                                    <div class="mini_portfolio">
+                                        <img src="image/portfolio/04.jpg" alt="portfolio01" />
+                                        <div class="cadre_hover">
+                                            <i onclick="lightbox();currentBox(4)" class="fa fa-eye" aria-hidden="true"></i>
+                                            <h3>Feng-Zhu Design</h3>
+                                            <p>Concept de design pour l'école</p>
+                                        </div>
+                                    </div>
+                                    <div class="corporate">
+                                        <img src="image/portfolio/05.jpg" alt="corporate03" />
+                                        <div class="cadre_hover">
+                                            <i onclick="lightbox();currentBox(5)" class="fa fa-eye" aria-hidden="true"></i>
+                                            <h3>Galeries Lafayette</h3>
+                                            <p>Dernière campagne des galeries</p>
+                                        </div>
+                                    </div>
+                                    <div class="creative">
+                                        <img src="image/portfolio/06.jpg" alt="creative02" />
+                                        <div class="cadre_hover">
+                                            <i onclick="lightbox();currentBox(6)" class="fa fa-eye" aria-hidden="true"></i>
+                                            <h3>TCL</h3>
+                                            <p>Flyers des transports Lyonnais</p>
+                                        </div>
+                                    </div>
+                                    <div class="creative">
+                                        <img src="image/portfolio/07.jpg" alt="creative03" />
+                                        <div class="cadre_hover">
+                                            <i onclick="lightbox();currentBox(7)" class="fa fa-eye" aria-hidden="true"></i>
+                                            <h3>Space-X</h3>
+                                            <p>Accueil pour l'agence de voyage</p>
+                                        </div>
+                                    </div>
+                                    <div class="mini_portfolio">
+                                        <img src="image/portfolio/08.jpg" alt="portfolio02" />
+                                        <div class="cadre_hover">
+                                            <i onclick="lightbox();currentBox(8)" class="fa fa-eye" aria-hidden="true"></i>
+                                            <h3>Be Theme</h3>
+                                            <p>Nouveau design de la marque</p>
+                                        </div>
+                                    </div>
+
+                                    <div id="lightbox">
+                                        <span class="close_cursor" onclick="closeLightbox()">&times;</span>
+
+                                        <div id="lightbox_content">
+
+                                            <div class="big_img">
+                                                <img src="image/portfolio/01.jpg" onclick="currentBox(1)" alt="creative01" />
+                                            </div>
+
+                                            <div class="big_img">
+                                                <img src="image/portfolio/02.jpg" onclick="currentBox(2)" alt="corporate01" />
+                                            </div>
+
+                                            <div class="big_img">
+                                                <img src="image/portfolio/03.jpg" onclick="currentBox(3)" alt="corporate02" />
+                                            </div>
+
+                                            <div class="big_img">
+                                                <img src="image/portfolio/04.jpg" onclick="currentBox(4)" alt="portfolio01" />
+                                            </div>
+
+                                            <div class="big_img">
+                                                <img src="image/portfolio/05.jpg" onclick="currentBox(5)" alt="corporate03" />
+                                            </div>
+
+                                            <div class="big_img">
+                                                <img src="image/portfolio/06.jpg" onclick="currentBox(6)" alt="creative02" />
+                                            </div>
+
+                                            <div class="big_img">
+                                                <img src="image/portfolio/07.jpg" onclick="currentBox(7)" alt="creative03" />
+                                            </div>
+
+                                            <div class="big_img">
+                                                <img src="image/portfolio/08.jpg" onclick="currentBox(8)" alt="portfolio02" />
+                                            </div>
+                                        </div>
+                                    </div>
+        			            </div>
+    			    	 </section>
+
+        			</div>
+
+        			<div class="liseret"></div>
+
+        			<div class="page"><!-- Contact -->
+
+                        <div class="ancre_menu" id="menu_contact"></div>
+
+            			<div id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.221484668345!2d2.3522142198433587!3d48.873054162601306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145cb52f15%3A0x4d3ec41b2cadff0!2s25+Rue+d&#39;Hauteville%2C+75010+Paris!5e0!3m2!1sfr!2sfr!4v1491236640115" height="628" allowfullscreen></iframe>
+
+            			<div id="contact">
+                            <form method="post" action="futur.php">
+        			            <fieldset>
+        			                <legend>Contact Info</legend>
+            			                <p id="adresse"><strong>WebAgency SAS</strong><br>
+            			                25 rue d'hauteville 75010 Paris<br>
+            			                Tél : 01 02 03 04 05</p>
+            			                    <input type="text" name="nom" id="nom" placeholder="Name" maxlength="50" required />
+            			                    <input type="email" name="email" id="email" placeholder="Email" maxlength="50" required />
+            			                    <input type="text" name="sujet" id="sujet" placeholder="Subject" maxlength="50" required />
+            			                    <textarea name="message" id="message" placeholder="Message" maxlength="500" required></textarea>
+            			                    <input class="envoyer" type="submit" value="Send Message" />
+            			                
+        			            </fieldset>
+                            </form>
+        			     </div>
+
+        			     </div>
+
+            		</div>
+
+    <!-- FOOTER -->
+
+    			<footer>
+
+    			    <div id="foot">
+                        <div id="foot_content">
+                            <h2>Suivez nos projets sur les réseaux sociaux</h2>
+                                <div id="logo_sociaux">
+                                    <a class="res_soc" href="https://www.facebook.com/"><i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a>
+                                    <a class="res_soc" href="https://twitter.com/?lang=fr"><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a>
+                                    <a class="res_soc" href="https://gsuite.google.fr/intl/fr/products/googleplus/"><i class="fa fa-google-plus-square fa-3x" aria-hidden="true"></i></a>
+                                </div>
+                        </div>
+                    </div>
+
+    		 	</footer>
+
+            </div>
+
+            <script src="script.js"></script>
+
+        </body>
+
+    </html>
